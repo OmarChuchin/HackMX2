@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
             public void onPageFinished(WebView view, String url) {
 
                 // Successfully logged in, load your logged in activity
-                if (url.contains("duckduckgo")) {
+                if (url.contains("https://cooperatorstravelinsurance.com/CookiesPrepLanding.aspx?pid=2po1fs&lang=en&C=1&checkCookie=true&Source=/TravelInsurance.aspx&Reason=No%20Cookies&AutoClose=1")) {
                     launcActivity();
                 }
 
@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         });
-        webView.loadUrl("https://www.google.com");
+        webView.loadUrl("http://quenoscumpla.mx/ad_developer/pruebas/hackmx19/");
 
         webView.getSettings().setJavaScriptEnabled(true);
         webView.getSettings().setPluginState(WebSettings.PluginState.ON);
@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void launcActivity(){
-        Intent hello = new  Intent(this, activity2.class);
+        Intent hello = getPackageManager().getLaunchIntentForPackage("com.mygdx.game");
         startActivity(hello);
 
 
@@ -70,7 +70,9 @@ public class MainActivity extends AppCompatActivity {
         if (webView.canGoBack()){
             webView.goBack();
         }else {
-            super.onBackPressed();
+            //super.onBackPressed();
+            webView.loadUrl("http://quenoscumpla.mx/ad_developer/pruebas/hackmx19/");
         }
     }
+
 }
