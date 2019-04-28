@@ -1,4 +1,4 @@
-package mx.rjfr.bogogo;
+package mx.rjfr.bologo;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package mx.rjfr.bogogo;
+package mx.rjfr.bologo;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("mx.rjfr.bogogo", appContext.getPackageName());
+        assertEquals("mx.rjfr.bologo", appContext.getPackageName());
     }
 }

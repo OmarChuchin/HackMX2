@@ -1,4 +1,4 @@
-package mx.rjfr.bogogo;
+package mx.rjfr.bologo;
 
 import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
