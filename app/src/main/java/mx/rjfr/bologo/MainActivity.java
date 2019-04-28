@@ -1,5 +1,6 @@
 package mx.rjfr.bologo;
 
+import android.content.Intent;
 import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -26,8 +27,18 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
 
+            public void onPageFinished(WebView view, String url) {
+
+                // Successfully logged in, load your logged in activity
+                if (url.contains("duckduckgo")) {
+                    launcActivity();
+                }
+
+            }
+
+
         });
-        webView.loadUrl("https://jeromeetienne.github.io/AR.js/");
+        webView.loadUrl("https://www.google.com");
 
         webView.getSettings().setJavaScriptEnabled(true);
         webView.getSettings().setPluginState(WebSettings.PluginState.ON);
@@ -41,7 +52,17 @@ public class MainActivity extends AppCompatActivity {
                     request.grant(request.getResources());
                 }
             }
+
+
         });
+
+    }
+
+    public void launcActivity(){
+        Intent hello = new  Intent(this, activity2.class);
+        startActivity(hello);
+
+
     }
 
     @Override
